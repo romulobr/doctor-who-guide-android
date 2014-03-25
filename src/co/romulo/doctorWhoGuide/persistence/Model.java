@@ -4,6 +4,10 @@ public class Model {
 
     private Integer id = null;
 
+    public Model(int id) {
+        this.id = id;
+    }
+
     public Integer getId() {
         return id;
     }

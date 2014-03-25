@@ -2,7 +2,8 @@ package co.romulo.doctorWhoGuide;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.example.doctorWhoGuide.R;
+
+import static co.romulo.doctorWhoGuide.R.*;
 
 public class Hello extends Activity {
     /**
@@ -11,6 +12,6 @@ public class Hello extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(layout.main);
     }
 }

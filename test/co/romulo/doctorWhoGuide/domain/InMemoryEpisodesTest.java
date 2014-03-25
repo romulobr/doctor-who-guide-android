@@ -1,5 +1,6 @@
 package co.romulo.doctorWhoGuide.domain;
 
+import co.romulo.doctorWhoGuide.Episodes.Models.Episode;
 import co.romulo.doctorWhoGuide.persistence.InMemoryRepository;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,15 +14,15 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 public class InMemoryEpisodesTest {
-    Collection<Episode> episodes = new ArrayList<Episode>();
+    List<Episode> episodes = new ArrayList<Episode>();
     InMemoryRepository<Episode> episodeRepository = new InMemoryRepository<Episode>(episodes);
 
     @Before
     public void setUp() throws Exception {
-        episodes.add(new Episode(1, "episode 1", "very nice and long description 1", new Date()));
-        episodes.add(new Episode(2, "episode 2", "very nice and long description 2", new Date()));
-        episodes.add(new Episode(3, "episode 3", "very nice and long description 3", new Date()));
-        episodes.add(new Episode(4, "episode 4", "very nice and long description 4", new Date()));
+        episodes.add(new Episode(1, 1, 1, "episode 1", "very nice and long description 1", new Date()));
+        episodes.add(new Episode(2, 1, 2, "episode 2", "very nice and long description 2", new Date()));
+        episodes.add(new Episode(3, 1, 3, "episode 3", "very nice and long description 3", new Date()));
+        episodes.add(new Episode(4, 1, 4, "episode 4", "very nice and long description 4", new Date()));
     }
 
     @Test

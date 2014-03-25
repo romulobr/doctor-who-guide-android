@@ -1,16 +1,12 @@
 package co.romulo.doctorWhoGuide.persistence;
 
-import co.romulo.doctorWhoGuide.domain.Episode;
-
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class InMemoryRepository<T extends Model> implements Repository<T> {
 
-    private final Collection<T> list;
+    private final List<T> list;
 
-    public InMemoryRepository(Collection<T> list) {
+    public InMemoryRepository(List<T> list) {
         this.list = list;
     }
 
@@ -25,7 +21,7 @@ public class InMemoryRepository<T extends Model> implements Repository<T> {
     }
 
     @Override
-    public Collection<T> getAll() {
+    public List<T> getAll() {
         return list;
     }
 }
