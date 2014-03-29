@@ -2,8 +2,6 @@ var expect = require('chai').expect
 var moment = require('moment');
 var ImdbParser = require('../lib/imdbDateParser');
 
-
-
 describe('IMDB date parser', function (){
     it('parses date formatted in the imdb site format', function() {
         parser = ImdbParser.create(moment);
