@@ -13,7 +13,7 @@ public class Episode extends Model {
         return name;
     }
 
-    public Episode(int id, int season, int number, String name, String sinopsys, Date firstAired) {
+    public Episode(int id, int season, int number, String name, String synopsys, Date firstAired) {
         super(id);
         this.season = season;
         this.number = number;
