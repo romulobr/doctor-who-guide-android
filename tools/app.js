@@ -16,4 +16,4 @@ function parseSeason(file, seasonNumber, startingId) {
     });
 }
 
-parseSeason('./seasons/season3.json',2,28);
+parseSeason('./seasons/season7.json', 7, 83);

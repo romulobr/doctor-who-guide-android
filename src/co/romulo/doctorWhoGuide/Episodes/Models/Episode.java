@@ -27,6 +27,14 @@ public class Episode extends Model {
     }
 
     public String getFormatedSeasonAndNumber() {
-        return String.valueOf(this.season)+ "/" + String.valueOf(this.number);
+        return String.valueOf(this.season)+ "." + String.valueOf(this.number);
+    }
+
+    public int getSeason() {
+        return season;
+    }
+
+    public int getNumber() {
+        return number;
     }
 }

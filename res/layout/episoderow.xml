@@ -9,14 +9,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="0/0"
+                android:text="0.0"
                 android:id="@+id/episodeNumber"
-                android:padding="10dp"/>
+                android:background="#f1ffff" android:textColor="#000000"
+                android:typeface="sans" android:minWidth="65dp" android:gravity="center" android:textStyle="bold|italic"/>
         <TextView
-                android:layout_width="324dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Name of the Episode"
+                android:gravity="center"
                 android:id="@+id/episodeName"
-/>
+                android:paddingLeft="10dp" android:paddingRight="10dp"/>
     </LinearLayout>
