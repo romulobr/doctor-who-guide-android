@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Season 1, Episode 1"
+                android:id="@+id/episodeDetailSeasonAndNumber"
+                android:layout_alignParentLeft="true" android:layout_alignParentRight="false"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="10/02/2005"
+                android:id="@+id/episodeDetailReleaseDate" android:gravity="right"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rose"
+            android:id="@+id/episodeDetailName" android:gravity="center" android:textSize="28dp"
+            android:paddingTop="8dp"/>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" android:layout_gravity="center_vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Rose Tyler is just an ordinary shop worker living an ordinary life in 21st century Britain. But that life is turned upside down when a strange man calling himself The Doctor drags her into an alien invasion attempt!"
+                android:id="@+id/episodeDetailSynopsys"
+                android:typeface="serif" android:textSize="20sp" android:autoText="false"
+                android:editable="false" android:singleLine="false"
+                android:padding="8dp" android:gravity="center" android:textStyle="normal"/>
+    </ScrollView>
+</LinearLayout>

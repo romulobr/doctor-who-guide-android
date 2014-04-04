@@ -1,6 +1,8 @@
 package co.romulo.doctorWhoGuide.persistence;
 
-public class Model {
+import java.io.Serializable;
+
+public class Model implements Serializable {
 
     private Integer id = null;
 
