@@ -23,13 +23,6 @@
                 android:id="@+id/episodeDetailReleaseDate" android:gravity="right"
                 android:layout_alignParentRight="true"/>
     </RelativeLayout>
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Rose"
-            android:id="@+id/episodeDetailName" android:gravity="center" android:textSize="28dp"
-            android:paddingTop="8dp"/>
     <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

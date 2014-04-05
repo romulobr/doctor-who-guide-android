@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ListView;
 import co.romulo.doctorWhoGuide.Episodes.Models.Episode;
 import co.romulo.doctorWhoGuide.Episodes.adapters.EpisodeArrayAdapter;
+import co.romulo.doctorWhoGuide.R;
 import dagger.ObjectGraph;
 
 import javax.inject.Inject;
@@ -20,6 +21,7 @@ public class EpisodeListActivity extends ListActivity {
         super.onCreate(bundle);
         inject();
         setListAdapter(episodeArrayAdapter);
+        setTitle("Episode List");
         showEpisodeDetailsIntent = new Intent(this, EpisodeDetailsActivity.class);
     }
 
@@ -28,6 +30,8 @@ public class EpisodeListActivity extends ListActivity {
         super.onListItemClick(l, v, position, id);
         Episode episode = (Episode) episodeArrayAdapter.getItem(position);
         showEpisodeDetailsIntent.putExtra("episode", episode);
+        View episodeNumberView = v.findViewById(R.id.episodeNumber);
+        showEpisodeDetailsIntent.putExtra("background-color", episodeNumberView.getDrawingCacheBackgroundColor());
         startActivity(showEpisodeDetailsIntent);
     }
 

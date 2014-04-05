@@ -22,12 +22,12 @@ public class EpisodeDetailsActivity extends Activity {
     }
 
     public void setEpisode(Episode episode) {
-        TextView episodeNameView = (TextView) this.findViewById(R.id.episodeDetailName);
+//        TextView episodeNameView = (TextView) this.findViewById(R.id.episodeDetailName);
         TextView episodeDateTextView = (TextView) this.findViewById(R.id.episodeDetailReleaseDate);
         TextView episodeSynopsysTextView = (TextView) this.findViewById(R.id.episodeDetailSynopsys);
         TextView episodeSeasonAndNumberTextView = (TextView) this.findViewById(R.id.episodeDetailSeasonAndNumber);
-
-        episodeNameView.setText(episode.getName());
+        setTitle(episode.getName());
+//        episodeNameView.setText(episode.getName());
         episodeDateTextView.setText(systemLocaleDateFormat.format(episode.getFirstAired()));
         episodeSynopsysTextView.setText(episode.getSynopsys());
         episodeSeasonAndNumberTextView.setText(episode.getFormatedSeasonAndNumberLongVersion());

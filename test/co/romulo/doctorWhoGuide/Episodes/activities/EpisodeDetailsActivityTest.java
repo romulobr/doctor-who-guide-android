@@ -30,17 +30,14 @@ public class EpisodeDetailsActivityTest {
 
         DateFormat systemDateFormat = android.text.format.DateFormat.getDateFormat(Robolectric.getShadowApplication().getApplicationContext());
 
-        TextView episodeNameTextView = (TextView) activity.findViewById(R.id.episodeDetailName);
         TextView episodeDateTextView = (TextView) activity.findViewById(R.id.episodeDetailReleaseDate);
         TextView episodeSynopsysTextView = (TextView) activity.findViewById(R.id.episodeDetailSynopsys);
         TextView episodeSeasonAndNumberTextView = (TextView) activity.findViewById(R.id.episodeDetailSeasonAndNumber);
 
-        String episodeNameInView = String.valueOf(episodeNameTextView.getText());
         String episodeDateInView = String.valueOf(episodeDateTextView.getText());
         String episodeSynopsysInView = String.valueOf(episodeSynopsysTextView.getText());
         String episodeSeasonAndNumberInView = String.valueOf(episodeSeasonAndNumberTextView.getText());
 
-        assertThat(episodeNameInView, is(episode.getName()));
         assertThat(episodeDateInView, is(systemDateFormat.format(episode.getFirstAired())));
         assertThat(episodeSynopsysInView, is(episode.getSynopsys()));
         assertThat(episodeSeasonAndNumberInView, is(episode.getFormatedSeasonAndNumberLongVersion()));

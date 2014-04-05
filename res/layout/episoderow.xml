@@ -20,5 +20,5 @@
                 android:text="Name of the Episode"
                 android:gravity="center"
                 android:id="@+id/episodeName"
-                android:paddingLeft="10dp" android:paddingRight="10dp"/>
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:textSize="12sp"/>
     </LinearLayout>
